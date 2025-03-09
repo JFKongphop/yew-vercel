@@ -5,8 +5,8 @@
     <title>Trunk Template</title>
     
 <script type="module">
-import init, * as bindings from '/final-yew-395c6674ebc9051d.js';
-const wasm = await init({ module_or_path: '/final-yew-395c6674ebc9051d_bg.wasm' });
+import init, * as bindings from '/final-yew-c59b79af159ced74.js';
+const wasm = await init({ module_or_path: '/final-yew-c59b79af159ced74_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -16,6 +16,10 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <!-- <link href="./src/output.css" rel="stylesheet"> -->
-  <link rel="modulepreload" href="/final-yew-395c6674ebc9051d.js" crossorigin="anonymous" integrity="sha384-4inNS3AtMQCBKzMPp+XxVzDmWgZbXFHQygSrcEiBBBQzlWoa7OJjDABeiT5ys1bj"><link rel="preload" href="/final-yew-395c6674ebc9051d_bg.wasm" crossorigin="anonymous" integrity="sha384-c1b4046EBS0DYwBZpZ+kTZVMeLQ6MTFoPwMuk0yl0ffevqeNj/6lg0AVof+KJePP" as="fetch" type="application/wasm"></head>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    
+  <link rel="modulepreload" href="/final-yew-c59b79af159ced74.js" crossorigin="anonymous" integrity="sha384-6Rql7PvcRYnDr/9Jprc4tOYVlra1OD1fWMwuJ7NVPli9XyMNR3xKJl78aW/RKSUU"><link rel="modulepreload" href="/snippets/final-yew-d0d3b14234351c7f/index.css" crossorigin="anonymous" integrity="sha384-gxzCzhL3rgpkCMS713/N5na8SLSGDN4cFpGCUIRlKWrLkjAypUqFAqEVY/gP8e9c"><link rel="preload" href="/final-yew-c59b79af159ced74_bg.wasm" crossorigin="anonymous" integrity="sha384-avfL9rLbMh9xvyFTMjLusrQ5MIfCTRkJ64CIn2cXeP0f/f6pepe+FWR7FTlIXxLk" as="fetch" type="application/wasm"></head>
 </html>
