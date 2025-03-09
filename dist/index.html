@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Trunk Template</title>
+    
+<script type="module">
+import init, * as bindings from '/final-yew-395c6674ebc9051d.js';
+const wasm = await init({ module_or_path: '/final-yew-395c6674ebc9051d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <link href="./src/output.css" rel="stylesheet"> -->
+  <link rel="modulepreload" href="/final-yew-395c6674ebc9051d.js" crossorigin="anonymous" integrity="sha384-4inNS3AtMQCBKzMPp+XxVzDmWgZbXFHQygSrcEiBBBQzlWoa7OJjDABeiT5ys1bj"><link rel="preload" href="/final-yew-395c6674ebc9051d_bg.wasm" crossorigin="anonymous" integrity="sha384-c1b4046EBS0DYwBZpZ+kTZVMeLQ6MTFoPwMuk0yl0ffevqeNj/6lg0AVof+KJePP" as="fetch" type="application/wasm"></head>
+</html>
